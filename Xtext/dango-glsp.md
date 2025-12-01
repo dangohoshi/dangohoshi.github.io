@@ -1,5 +1,9 @@
 # 自定义 ecore 文件并侧载 EMF 模型
 
+Dec 1, 2025
+
+---
+
 ## 背景
 
 在使用 [`Xtext`](https://eclipse.dev/Xtext/) + [`LSP4J`](https://projects.eclipse.org/projects/technology.lsp4j) 进行[语言服务器](https://microsoft.github.io/language-server-protocol/)开发的时候，框架会为 DSL 中的每一个元素生成一个 `EObject` 类型的接口以及其对应实现类。这其实是因为 LSP4J 框架实际依赖了 [`EMF`](https://projects.eclipse.org/projects/modeling.emf.emf) 框架，并通过框架动态加载 `Resource` 解析后生成这些 `EObject` 实例。
